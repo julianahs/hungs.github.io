@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tớ có điều muốn nói 💖</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #ffeef2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      background: white;
+      padding: 35px 45px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      max-width: 320px;
+    }
+
+    h1 {
+      color: #ff5c8a;
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 12px 22px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .yes {
+      background: #ff5c8a;
+      color: white;
+    }
+
+    .no {
+      background: #eee;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 17px;
+      color: #ff5c8a;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>💗 Này…</h1>
+  <p>
+    Tớ không giỏi nói lời hoa mỹ<br>
+    Nhưng tớ thật sự thích cậu 💕<br><br>
+    Cậu có muốn làm người yêu tớ không?
+  </p>
+
+  <button class="yes" onclick="yes()">Đồng ý 💖</button>
+  <button class="no" onclick="no()">Để suy nghĩ 😳</button>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function yes() {
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").innerHTML =
+      "🥰 Tớ biết mà~<br>Cảm ơn vì đã bước vào cuộc sống của tớ 💗";
+  }
+
+  function no() {
+    document.getElementById("result").style.display = "block";
+    document.getElementById("result").innerHTML =
+      "🥹 Không sao đâu…<br>Tớ vẫn trân trọng cậu 💕";
+  }
+</script>
+
+</body>
+</html>
